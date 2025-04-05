@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "goit-pythonweb-hw-10"
+version = "0.1.0"
+description = "Contacts API"
+authors = ["Iryna Sabinina <pysarenkoiryna@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "src" },  # Вказує, що папка `src` належить до проекту
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.6"
+uvicorn = "^0.34.0"
+sqlalchemy = {extras = ["asyncio"], version = "^2.0.37"}
+psycopg2 = "^2.9.10"
+pydantic = "^2.10.5"
+alembic = "^1.14.0"
+pydantic-settings = "^2.7.1"
+asyncpg = "^0.30.0"
+email-validator = "^2.2.0"
+python-jose = "^3.3.0"
+slowapi = "^0.1.7"
+cloudinary = "^1.30.0"
+passlib = "^1.7.4"
+fastapi-mail = "^1.2.0"
+python-multipart = "^0.0.6"
+libgravatar = "^1.0.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
